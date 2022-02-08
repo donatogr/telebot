@@ -3,7 +3,7 @@ import random
 import urllib.parse
 import urllib.request
 
-token = '1326070328:AAFiJLIu-o-Z7vCNxw8Tf6vd95xv2Li7u78'
+token = ''
 
 def lambda_handler(event, context):
     body = json.loads(event['body'])
@@ -36,14 +36,7 @@ def lambda_handler(event, context):
 
 def joke():
     names = [
-        {"first_name": "Andrea", "last_name": "Fabretto"},
-        {"first_name": "Donato", "last_name": "Grieco"},
-        {"first_name": "Alessandro", "last_name": "Bordini"},
-        {"first_name": "Giordano", "last_name": "Sala"},
-        {"first_name": "Ronald", "last_name": "Tischler"},
-        {"first_name": "Lukas", "last_name": "Marcincin"},
-        {"first_name": "Karol", "last_name": "Hajdu"},
-        {"first_name": "Dusan", "last_name": "Herich"}
+        {"first_name": "Chuck", "last_name": "Norris"}
     ]
 
     url = 'http://api.icndb.com/jokes/random?escape=javascript&limitTo=[nerdy]&firstName={first_name}&lastName={last_name}'
